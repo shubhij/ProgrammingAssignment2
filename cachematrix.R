@@ -25,6 +25,6 @@ cacheSolve <- function(x, ...) {
         data<-x$get()                            ##if inv returns null, data is taken using get
         inv<-solve(data, ...)                    ##inverse of data is computed which is not in cache
         x$setinverse(inv)                        ## inverse computed is stored in cache
-        inv
+        inv                                      ##value returned
 }
 
